@@ -1,0 +1,17 @@
+body {
+	color: #fff;
+	background-color: #d9f7e5;
+}
+
+.jumbotron {
+  box-sizing: border-box;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0);  /*Makes the jumbotron background transparent so the body background shows up*/
+}
+
+.main-button-container {
+  margin-top: 160px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
