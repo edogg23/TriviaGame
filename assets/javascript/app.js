@@ -27,7 +27,7 @@ var questionsArrary = [
 var outputQuestions = [];
 var answersArray = ["Hydrogen", "Lead", "Pyrite", "Technetium", "90"]
 var startScreen;
-var counter = 10;
+var counter = 30;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unansweredQuestions = 0;
@@ -202,7 +202,7 @@ function displayResults() {
 }
 
 function gameReset() {
-	counter = 10;
+	counter = 30;
 	outputQuestions = [];
 	correctAnswers = 0;
 	incorrectAnswers = 0;
