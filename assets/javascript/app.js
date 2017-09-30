@@ -5,24 +5,24 @@
 	// },
 
 
-var contentArray = [
-	["<p>What is the first element on the periodic table?", ["<br><input type='radio' name='question1' value='1' class='answers' checked>Lithium &nbsp;<input type='radio' name='question1' value='Hydrogen' class='answers' class='answers'>Hydrogen &nbsp; <input type='radio' name='question1' value='3' class='answers'>Oxygen &nbsp; <input type='radio' name='question1' value='4' class='answers'>Helium</p>", "Hydrogen"] ]
-	["<p>The symbol ‘Pb’ refers to which chemical element?", ["<br><input type='radio' name='question2' value='1' class='answers2' checked>Phosphorus &nbsp; <input type='radio' name='question2' value='2' class='answers2'>Iron &nbsp; <input type='radio' name='question2' value='Lead' class='answers2'>Lead &nbsp; <input type='radio' name='question2' value='4' class='answers2'>Polonium</p>", "Lead"] ]
-	["<p>What mineral is also referred to as \"Fool's gold\"?", ["<br><input type='radio' name='question3' value='1' class='answers3' checked>Krypton &nbsp; <input type='radio' name='question3' value='Pyrite' class='answers3'>Pyrite &nbsp; <input type='radio' name='question3' value='3' class='answers3'>Tellurium &nbsp; <input type='radio' name='question3' value='4' class='answers3'>Cadmium</p>", "Lead"] ]
-	["<p>What was the first element to be made artificially?", ["<br><input type='radio' name='question4' value='1' class='answers4' checked>Neon &nbsp; <input type='radio' name='question4' value='2' class='answers4'>Iron &nbsp; <input type='radio' name='question4' value='3' class='answers4'>Silver &nbsp; <input type='radio' name='question4' value='Technetium' class='answers4'>Technetium</p>", "Technetium"] ]
-	["<p>How many elements on the periodic table that occur in nature?", ["<br><input type='radio' name='question5' value='90' class='answers5' checked>90 &nbsp; <input type='radio' name='question5' value='2' class='answers5'>57 &nbsp; <input type='radio' name='question5' value='3' class='answers5'>120 &nbsp; <input type='radio' name='question5' value='4' class='answers5'>5</p>", "90"] ]
-];
+// var contentArray = [
+// 	["<p>What is the first element on the periodic table?", ["<br><input type='radio' name='question1' value='1' class='answers' checked>Lithium &nbsp;<input type='radio' name='question1' value='Hydrogen' class='answers' class='answers'>Hydrogen &nbsp; <input type='radio' name='question1' value='3' class='answers'>Oxygen &nbsp; <input type='radio' name='question1' value='4' class='answers'>Helium</p>", "Hydrogen"] ]
+// 	["<p>The symbol ‘Pb’ refers to which chemical element?", ["<br><input type='radio' name='question2' value='1' class='answers2' checked>Phosphorus &nbsp; <input type='radio' name='question2' value='2' class='answers2'>Iron &nbsp; <input type='radio' name='question2' value='Lead' class='answers2'>Lead &nbsp; <input type='radio' name='question2' value='4' class='answers2'>Polonium</p>", "Lead"] ]
+// 	["<p>What mineral is also referred to as Fool's gold?", ["<br><input type='radio' name='question3' value='1' class='answers3' checked>Krypton &nbsp; <input type='radio' name='question3' value='Pyrite' class='answers3'>Pyrite &nbsp; <input type='radio' name='question3' value='3' class='answers3'>Tellurium &nbsp; <input type='radio' name='question3' value='4' class='answers3'>Cadmium</p>", "Pyrite"] ]
+// 	["<p>What was the first element to be made artificially?", ["<br><input type='radio' name='question4' value='1' class='answers4' checked>Neon &nbsp; <input type='radio' name='question4' value='2' class='answers4'>Iron &nbsp; <input type='radio' name='question4' value='3' class='answers4'>Silver &nbsp; <input type='radio' name='question4' value='Technetium' class='answers4'>Technetium</p>", "Technetium"] ]
+// 	["<p>How many elements on the periodic table that occur in nature?", ["<br><input type='radio' name='question5' value='90' class='answers5' checked>90 &nbsp; <input type='radio' name='question5' value='2' class='answers5'>57 &nbsp; <input type='radio' name='question5' value='3' class='answers5'>120 &nbsp; <input type='radio' name='question5' value='4' class='answers5'>5</p>", "90"] ]
+// ];
 
 
 
 
 
 var questionsArrary = [
-	"<p>What is the first element on the periodic table?<br><input type='radio' name='question1' value='1' class='answers' checked>Lithium &nbsp; <input type='radio' name='question1' value='Hydrogen' class='answers' class='answers'>Hydrogen &nbsp; <input type='radio' name='question1' value='3' class='answers'>Oxygen &nbsp; <input type='radio' name='question1' value='4' class='answers'>Helium</p>", 
-	"<p>The symbol ‘Pb’ refers to which chemical element?<br><input type='radio' name='question2' value='1' class='answers2' checked>Phosphorus &nbsp; <input type='radio' name='question2' value='2' class='answers2'>Iron &nbsp; <input type='radio' name='question2' value='Lead' class='answers2'>Lead &nbsp; <input type='radio' name='question2' value='4' class='answers2'>Polonium</p>",	
-	"<p>What mineral is also referred to as \"Fool's gold\"?<br><input type='radio' name='question3' value='1' class='answers3' checked>Krypton &nbsp; <input type='radio' name='question3' value='Pyrite' class='answers3'>Pyrite &nbsp; <input type='radio' name='question3' value='3' class='answers3'>Tellurium &nbsp; <input type='radio' name='question3' value='4' class='answers3'>Cadmium</p>", 
-	"<p>What was the first element to be made artificially<br><input type='radio' name='question4' value='1' class='answers4' checked>Neon &nbsp; <input type='radio' name='question4' value='2' class='answers4'>Iron &nbsp; <input type='radio' name='question4' value='3' class='answers4'>Silver &nbsp; <input type='radio' name='question4' value='Technetium' class='answers4'>Technetium</p>", 
-	"<p>How many elements on the periodic table that occur in nature?<br><input type='radio' name='question5' value='90' class='answers5' checked>90 &nbsp; <input type='radio' name='question5' value='2' class='answers5'>57 &nbsp; <input type='radio' name='question5' value='3' class='answers5'>120 &nbsp; <input type='radio' name='question5' value='4' class='answers5'>5</p>"
+	"<p>What is the first element on the periodic table?<br><input type='radio' name='question1' value='1' class='answers1'>Lithium &nbsp; <input type='radio' name='question1' value='Hydrogen' class='answers1'>Hydrogen &nbsp; <input type='radio' name='question1' value='3' class='answers1'>Oxygen &nbsp; <input type='radio' name='question1' value='4' class='answers1'>Helium</p>", 
+	"<p>The symbol ‘Pb’ refers to which chemical element?<br><input type='radio' name='question2' value='1' class='answers2'>Phosphorus &nbsp; <input type='radio' name='question2' value='2' class='answers2'>Iron &nbsp; <input type='radio' name='question2' value='Lead' class='answers2'>Lead &nbsp; <input type='radio' name='question2' value='4' class='answers2'>Polonium</p>",	
+	"<p>What mineral is also referred to as \"Fool's gold\"?<br><input type='radio' name='question3' value='1' class='answers3'>Krypton &nbsp; <input type='radio' name='question3' value='Pyrite' class='answers3'>Pyrite &nbsp; <input type='radio' name='question3' value='3' class='answers3'>Tellurium &nbsp; <input type='radio' name='question3' value='4' class='answers3'>Cadmium</p>", 
+	"<p>What was the first element to be made artificially<br><input type='radio' name='question4' value='1' class='answers4'>Neon &nbsp; <input type='radio' name='question4' value='2' class='answers4'>Iron &nbsp; <input type='radio' name='question4' value='3' class='answers4'>Silver &nbsp; <input type='radio' name='question4' value='Technetium' class='answers4'>Technetium</p>", 
+	"<p>How many elements on the periodic table that occur in nature?<br><input type='radio' name='question5' value='90' class='answers5'>90 &nbsp; <input type='radio' name='question5' value='2' class='answers5'>57 &nbsp; <input type='radio' name='question5' value='3' class='answers5'>120 &nbsp; <input type='radio' name='question5' value='4' class='answers5'>17</p>"
 	]
 var outputQuestions = [];
 var answersArray = ["Hydrogen", "Lead", "Pyrite", "Technetium", "90"]
@@ -47,9 +47,10 @@ $(document).ready(function() {
 	$(".content").html(startScreen);
 	$(".questions").html("");
 
-	console.log("correct answers: " + correctAnswers);
-	console.log("incorrect answers: " + incorrectAnswers);
-	console.log("unanswered questions: " + unansweredQuestions);
+	// console.log("correct answers: " + correctAnswers);
+	// console.log("incorrect answers: " + incorrectAnswers);
+	// console.log("unanswered questions: " + unansweredQuestions);
+	// console.log("selected answer: " + selectedAnswer);
 
 	// console.log(startScreen);
 	}
@@ -64,35 +65,35 @@ $(document).ready(function() {
 
 }); // Closes start-button click
 
-$(document).on("click", ".answers", function(event){
+$(document).on("click", ".answers1", function(event){
 	//answeredQuestion = true;
 	// clickSound.play();
 	selectedAnswer = $(this).val();
-	// console.log("what was clicked: ", selectedAnswer);
+	console.log("what was clicked: ", selectedAnswer);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers2", function(event){
 	selectedAnswer2 = $(this).val();
-	// console.log("what was clicked 2nd: ", selectedAnswer2);
+	console.log("what was clicked 2nd: ", selectedAnswer2);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers3", function(event){
 	selectedAnswer3 = $(this).val();
-	// console.log("what was clicked 3rd: ", selectedAnswer3);
+	console.log("what was clicked 3rd: ", selectedAnswer3);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers4", function(event){
 	selectedAnswer4 = $(this).val();
-	// console.log("what was clicked 4th: ", selectedAnswer4);
+	console.log("what was clicked 4th: ", selectedAnswer4);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers5", function(event){
 	selectedAnswer5 = $(this).val();
-	// console.log("what was clicked 5th: ", selectedAnswer5);
+	console.log("what was clicked 5th: ", selectedAnswer5);
 	
 }); // Close .answers click
 
@@ -125,6 +126,13 @@ function timerCountdown() {
 		$(".timer").html(counter);
 	}
 }
+
+// function writeQuestions() {
+// 	$.each(contentArray, function(index, value) {
+// 	    outputQuestions.push('<span>' + value + '</span>');
+// 	});
+// 	$(".questions").html(outputQuestions.join(""));
+// }
 
 function writeQuestions() {
 	$.each(questionsArrary, function(index, value) {
@@ -190,6 +198,7 @@ function displayResults() {
 	console.log("correct answers in display: " + correctAnswers);
 	console.log("incorrect answers in display: " + incorrectAnswers);
 	console.log("unanswered questions in display: " + unansweredQuestions);
+	console.log("selected answer: " + selectedAnswer);
 }
 
 function gameReset() {
