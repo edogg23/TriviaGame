@@ -69,31 +69,31 @@ $(document).on("click", ".answers1", function(event){
 	//answeredQuestion = true;
 	// clickSound.play();
 	selectedAnswer = $(this).val();
-	console.log("what was clicked: ", selectedAnswer);
+	// console.log("what was clicked: ", selectedAnswer);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers2", function(event){
 	selectedAnswer2 = $(this).val();
-	console.log("what was clicked 2nd: ", selectedAnswer2);
+	// console.log("what was clicked 2nd: ", selectedAnswer2);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers3", function(event){
 	selectedAnswer3 = $(this).val();
-	console.log("what was clicked 3rd: ", selectedAnswer3);
+	// console.log("what was clicked 3rd: ", selectedAnswer3);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers4", function(event){
 	selectedAnswer4 = $(this).val();
-	console.log("what was clicked 4th: ", selectedAnswer4);
+	// console.log("what was clicked 4th: ", selectedAnswer4);
 	
 }); // Close .answers click
 
 $(document).on("click", ".answers5", function(event){
 	selectedAnswer5 = $(this).val();
-	console.log("what was clicked 5th: ", selectedAnswer5);
+	// console.log("what was clicked 5th: ", selectedAnswer5);
 	
 }); // Close .answers click
 
@@ -198,7 +198,7 @@ function displayResults() {
 	console.log("correct answers in display: " + correctAnswers);
 	console.log("incorrect answers in display: " + incorrectAnswers);
 	console.log("unanswered questions in display: " + unansweredQuestions);
-	console.log("selected answer: " + selectedAnswer);
+	// console.log("selected answer: " + selectedAnswer);
 }
 
 function gameReset() {
@@ -207,6 +207,11 @@ function gameReset() {
 	correctAnswers = 0;
 	incorrectAnswers = 0;
 	unansweredQuestions = 0;
+	selectedAnswer = 100;
+    selectedAnswer2 = 100;
+    selectedAnswer3 = 100;
+    selectedAnswer4 = 100;
+    selectedAnswer5 = 100;
 	init();
 	// console.log("correct answers: " + correctAnswers);
 	// console.log("incorrect answers: " + incorrectAnswers);
